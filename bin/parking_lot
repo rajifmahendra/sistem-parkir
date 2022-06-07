@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Add script to run program here.
+# Complete bin/setup so that after it is
+# run, bin/parking_lot can be used to launch
+# it.
+
+# This variable contains absolute path of this `parking_lot` script
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+
+node $DIR/../index.js $1
+

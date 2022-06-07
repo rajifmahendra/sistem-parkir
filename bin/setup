@@ -1,0 +1,15 @@
+# Assume NodeJS is installed. Automatically installed NodeJS through
+# this script is outside the scope of this project.
+# Provide easy commands with links to official documentation on NodeJS installation.
+if which node > /dev/null
+  then
+    echo "node is installed, installing libraries..."
+
+    # Scripts to install required JS packages & run tests
+    npm install
+    npm run test
+else
+  echo "'node' is not installed on this machine";
+  echo "Please install node (version 8) to complete the setup";
+  echo "This link will help you install node - https://github.com/nodesource/distributions/blob/master/README.md";
+fi
